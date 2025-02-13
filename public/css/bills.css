@@ -1,0 +1,124 @@
+/* تنسيق عام للـ body */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl; /* لجعل النصوص باللغة العربية تظهر بشكل صحيح */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* تنسيق للـ container */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* تنسيق العنوان */
+  h1 {
+    text-align: center;
+    color: #132d2e;
+  }
+  
+  /* تنسيق جدول السيارات */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #132d2e;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* تنسيق رسالة النجاح */
+  .alert-success {
+    padding: 15px;
+    background-color: #132d2e;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  .alert-success strong {
+    font-weight: bold;
+  }
+  
+  /* تنسيق الزر للقائمة الرئيسية */
+  .btn-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* اللون الأزرق */
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 15px; /* إضافة مسافة بين الزر وزر إضافة السيارة */
+  }
+  
+  .btn-home i {
+    margin-right: 10px; /* إضافة مسافة بين الأيقونة والنص */
+    font-size: 1.5em; /* زيادة حجم الأيقونة */
+  }
+  
+  .btn-home:hover {
+    background-color: #0056b3; /* تغيير اللون عند التمرير */
+    transform: translateY(-3px); /* تأثير حركة عند التمرير */
+  }
+  
+  .btn-home:active {
+    background-color: #003d80; /* تغيير اللون عند الضغط */
+    transform: translateY(0);
+  }
+  
+  /* تنسيق الزر لإضافة سيارة جديدة */
+  .btn-add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #333; /* خلفية سوداء */
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-add i {
+    margin-right: 10px; /* إضافة مسافة بين الأيقونة والنص */
+    font-size: 1.5em; /* زيادة حجم الأيقونة */
+  }
+  
+  .btn-add:hover {
+    background-color: #444; /* تغيير اللون عند التمرير */
+    transform: translateY(-3px); /* تأثير حركة عند التمرير */
+  }
+  
+  .btn-add:active {
+    background-color: #222; /* تغيير اللون عند الضغط */
+    transform: translateY(0);
+  }
+  

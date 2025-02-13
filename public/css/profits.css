@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+}
+header {
+    background-color: #333;  /* اللون الأسود */
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;  /* يجعل الزر يبدو كعنصر قابل للضغط */
+    transition: all 0.3s ease;  /* تأثير الانتقال عند التمرير */
+}
+
+header:hover {
+    background-color: #444;  /* تغيير اللون عند التمرير إلى اللون الرمادي الداكن */
+    transform: scale(1.1);  /* زيادة الحجم قليلاً عند التمرير */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* إضافة ظل خفيف لجعل الزر يبرز */
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #555;  /* اللون الرمادي */
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #444;  /* لون داكن أقرب للرمادي الداكن */
+}
+
+.button::after {
+    content: "➜";
+    font-size: 20px;
+    margin-left: 10px;
+}

@@ -1,0 +1,109 @@
+/* تنسيق عام للصفحة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #534e4e;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #132d2e;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+/* تنسيق أيقونة الصفحة الرئيسية */
+.home-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #132d2e;
+}
+
+.home-icon:hover {
+  background-color: #125c5c;
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 750px; /* تقليل العرض */
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px; /* تقليل الحشو */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* تقليل التباعد بين العناصر */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 1.2em; /* تصغير حجم الخط قليلاً */
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px; /* تقليل الحشو */
+  font-size: 1.1em;
+  margin-bottom: 12px; /* تقليل المسافة بين الحقول */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #132d2e;
+  outline: none;
+}
+
+button {
+  padding: 12px; /* تقليل الحشو */
+  font-size: 1.2em; /* تقليل حجم الخط */
+  background-color: #132d2e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #125c5c;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #0f4a4a;
+  transform: scale(0.98);
+}

@@ -1,0 +1,38 @@
+/* تنسيق للـ body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* تأكد من أن الشاشة تملأها الصفحة */
+    display: flex;
+    justify-content: center; /* محاذاة العناصر أفقياً في المنتصف */
+    align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+    background-color: #f4f4f4; /* لون خلفية الصفحة */
+}
+
+/* تنسيق للمربع الذي يحتوي على الرسالة */
+.message-box {
+    background-color: #28a745; /* اللون الأخضر */
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    width: 80%; /* تحديد عرض المربع */
+    max-width: 400px; /* تحديد أقصى عرض للمربع */
+    opacity: 0; /* بدء الشفافية */
+    animation: fadeIn 1s forwards; /* إضافة تأثير ظهور الرسالة */
+}
+
+/* تأثير انتقال الرسالة */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* بدء الرسالة خارج الشاشة */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* الوصول إلى مكانها الطبيعي */
+    }
+}
